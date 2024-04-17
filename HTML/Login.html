@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Shop</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/toggle.js" defer></script>
+</head>
+    <div id="header">
+        <label class="logo" for=""><a href="../HTML/homepagee.html"><img src="../img/Apple-Watch-Logo-Vector.png" alt=""></a></label>
+        <nav id="menu">
+            <ul id="main_menu">
+                <li><a style="text-decoration: none;" class="mn" href="../HTML/homepagee.html">Trang chủ</a></li>
+                <li><a  style="text-decoration: none;"class="mn" href="" >Tất cả sản phẩm</a>
+                    <ul id="menucap" style="margin-top: -5px;">
+                        <li><a style="text-decoration: none;" class="menucap2" href="../HTML/casio.html">Casio</a></li>
+                        <li><a style="text-decoration: none;" class="menucap2" href="../HTML/citizen.html">Citizen</a></li>
+                        <li><a style="text-decoration: none;" class="menucap2" href="../HTML/orient.html">Orient</a></li>
+                        <li><a style="text-decoration: none;" class="menucap2" href="../HTML/seiko.html">Seiko</a></li>
+                        <li><a style="text-decoration: none;" class="menucap2" href="../HTML/tissot.html">Tisot</a></li>
+                    </ul>
+                </li>
+                <li><a style="text-decoration: none;" class="mn" href="">Dịch vụ</a>
+                    <ul id="menucap" style="margin-top: -5px;">
+                        <li><a style="text-decoration: none;" href="../HTML/chinhsachthanhtoanvadoitra.html" class="menucap2">Chính sách thanh toán và đổi trả</a></li>
+                        <li><a style="text-decoration: none;" href="../HTML/chinhsachbaomat.html" class="menucap2">Chính sách bảo mật</a></li>
+                        <li><a style="text-decoration: none;" href="../HTML/chinhsachbaohanh.html" class="menucap2">Chính sách bảo hành</a></li>
+                    </ul>
+                </li>
+                <li><a style="text-decoration: none;" class="mn" href="">Đăng nhập</a></li>
+            </ul>
+            <label for="menu-bar" id="icon">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>  
+    </div>
+                
+
+<body>
+        <div class="form">
+            <div id="form_box_login">
+                <form action="" onsubmit="checkPassword(event)" id="lg-formm">
+                    <h2 class="text-primary" >ĐĂNG NHẬP</h2>
+                    <div id="form_input" >
+                        <input  type="email" id="username" name="username" class="form-control" style="height: 60px;" required placeholder="Email" >
+                    </div>
+                    <div id="form_input">
+                        <input  type="password" id="password" name="password" class="form-control" style="height: 60px;" placeholder="Mật khẩu" >
+                    </div>
+                    <div id="signin">
+                        <button type="submit"><p>ĐĂNG NHẬP</p> </button>
+                    </div>
+                    <div id="check">
+                        <label class="check_wrap"><input type="checkbox"> Ghi nhớ</label>
+                        
+                        <a href="#" style="color: white;">Quên mật khẩu</a>
+                    </div>  
+                    <div class="loginn">
+                        <label for=""> — Hoặc đăng nhập với — </label>
+                    </div>
+                    <div id="button_social">
+                        <a class="item1"href="https://www.facebook.com/" style="text-decoration: none;">
+                            <span class="facebook"><i id="face" class="fab fa-facebook"></i>
+                                Facebook
+                            </span>
+                        </a>
+                        <a class="item2" href="https://twitter.com/" style="text-decoration: none;">
+                            <span   class="twitter"><i id="tw" class="fab fa-twitter"></i>
+                                Twitter
+                            </span>
+                        </a> 
+                    </div>
+                    <div id="register">
+                        <p>Không có tài khoản?
+                            <a href="#" class="register_link">Đăng ký</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="form_box_register">
+                <form action="" id="register-form">
+                    <h2 class="text-primary">ĐĂNG KÝ</h2>
+                    <div class="form_input1">
+                        <input type="text" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="form_input1">
+                        <input type="email" id="username-input" name="usernamee" class="form-control" style="height: 60px;" required placeholder="Email">
+                    </div>
+                    <div class="form_input1">
+                        <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Mật khẩu">
+                    </div>
+                    <div class="form_input1">
+                        <input type="password" id="password-input" name="passwordd" class="form-control" style="height: 60px;"  placeholder="Nhập lại mật khẩu">
+                    </div>
+                    <div id="signin1">
+                        <button type="submit"><p>ĐĂNG KÝ</p></button>
+                    </div>
+                    <div id="check1">
+                        <label class="check_wrap"><input type="checkbox"> Tôi đồng ý với các điều khoản & điều kiện</label>
+                        
+                    </div>  
+                    <div class="loginn">
+                        <label for=""> — Hoặc đăng nhập với — </label>
+                    </div>
+                    <div id="button_social1">
+                        
+                            <a class="item3"href="https://www.facebook.com/" style="text-decoration: none;">
+                                <span class="facebook1"><i id="face1" class="fab fa-facebook"></i>
+                                    Facebook
+                                </span>
+                            </a>
+                            <a class="item4" href="https://twitter.com/" style="text-decoration: none;">
+                                <span class="twitter1"><i id="tw1"  class="fab fa-twitter"></i>
+                                    Twitter
+                                </span>
+                            </a> 
+                        
+                        
+                    </div>
+                    <div id="register">
+                        <p>Đã có tài khoản?
+                            <a href="#" class="login_link">Đăng nhập</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="../js/login.js"></script>
+        <footer>
+            <div class="container">
+                <!--Bắt Đầu Nội Dung Giới Thiệu-->
+                <div class="noi-dung about">
+                    <h2>Về Chúng Tôi</h2>
+                    <ul class="social-icon">
+                        <li>
+                            <a href="https://www.facebook.com/"><i style="position:absolute; color: #3d6fdc " class="fab fa-facebook"></i></a>
+                        </li>
+                        <li>
+    
+                            <a href="https://twitter.com/home?lang=vi"><i style="position:absolute; color: rgb(16, 163, 221);" class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+    
+                            <a style="background-image:linear-gradient(180deg, blueviolet, magenta, deeppink, darkorange, yellow); ;" href="https://www.instagram.com/"><i style=" position: absolute; " class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+    
+                            <a href="https://www.youtube.com/"><i style="position:absolute; color: red" class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Giới Thiệu-->
+                <!--Bắt Đầu Nội Dung Đường Dẫn-->
+                <div class="noi-dung links">
+                    <h2>Đường Dẫn</h2>
+                    <ul>
+                        <li><a href="#">Trang Chủ</a></li>
+                        <li><a href="#">Thông tin chúng tôi</a></li>
+                        <li><a href="#">Thông Tin Liên Lạc</a></li>
+                        <li><a href="#">Dịch Vụ</a></li>
+                        <li><a href="#">Điều Kiện Chính Sách</a></li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Đường Dẫn-->
+                <!--Bắt Đâu Nội Dung Liên Hệ-->
+                <div class="noi-dung contact">
+                    <h2>Liên Hệ</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>
+                                Đinh Trần Công Chiến <br />
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-phone"></i></span>
+                            <p><a href="#">+84 765 976 766</a>
+                                <br />
+                                <a href="#">+84 878 085 650</a></p>
+                        </li>
+                        <li>
+                            <span><i class="fa fa-envelope"></i></span>
+                            <p><a href="#">WatchShop123@gmail.com</a></p>
+                        </li>
+                        <li>
+                            <form class="form">
+                                <input type="email" class="form__field" placeholder="Đăng Ký Email" />
+                                <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+                <!--Kết Thúc Nội Dung Liên Hệ-->
+            </div>
+        </footer>
+</body>
+
+</html>         

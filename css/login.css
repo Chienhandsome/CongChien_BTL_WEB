@@ -1,0 +1,699 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&family=Ubuntu:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo img{
+    width: 150px;
+    height: 60px;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #111111;
+    z-index: 100;
+}
+
+#main_menu{
+    display: flex;
+    
+}
+#main_menu li .mn{
+    color: #fff;
+    display: block;
+    padding: 23px 40px;
+    font-size: 20px;
+}
+#main_menu li:hover .mn{
+    color: #ee4266;
+}
+#menucap li .menucap2{
+    color: #fff;
+    display: block;
+    padding: 15px 15px;
+    font-size: 20px;
+    width: 340px;
+}
+#menucap li:hover .menucap2 {
+    color: #ee4266;
+    transition: all 0.3s;
+}
+#menucap{
+    border-top: 2px solid #ee4266;
+    text-align: left;
+    margin-left: 30px;
+    background-color: #111111;
+}
+li > ul{
+    display: none;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+li:hover ul{
+    display: block;
+    position: absolute;
+    
+    
+    
+}
+nav #icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: -60px;
+    display: none;
+    cursor: pointer;
+    
+}
+@media (max-width: 1286px){
+    .logo{
+        position: absolute;
+        left: 0;
+    }
+    #main_menu{
+        display: none;
+        z-index: 1;
+    }
+    nav #icon{
+        display: block;
+    }
+    #main_menu{
+        flex-direction: column;
+        
+    }
+    .item3{
+        z-index: -1;
+    }
+   
+    #menu{
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        background: rgb(63, 62, 62);
+    }
+    #menu #main_menu .mn{
+        width: 100%;
+    }
+    #menu #main_menu .mn #menucap{
+        position: relative;
+        width: 100%;
+    }
+
+}
+
+.form{
+    margin-top:4%;
+    z-index: -100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/pexels-drew-williams-3098619.jpg);
+    background-position: center;
+    background-size: cover;
+    
+    
+    
+}
+.form.active{
+    height: 650px;
+}
+
+#form_box_login{
+    margin-top: -50px;
+    background: transparent;
+    border: 1px solid rgb(87, 85, 85);
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+    position: relative;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.form_box_register{
+    
+    background: transparent;
+    border: 1px solid rgb(87, 85, 85);
+    border-radius: 15px;
+    backdrop-filter: blur(50px);
+    position: relative;
+    width: 450px;
+    height: 710px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+h2{
+    font-size: 2em;
+    
+    text-align: center;
+    padding: 15px 0px;
+}
+.form_input1{
+    position: relative;
+    padding: 10px 30px; 
+}
+.form_input1 input{
+    border-radius: 50px;
+    padding: 20px 25px;
+    margin-left: 15px;
+    width: 360px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;
+}
+.form_input1 input:hover{
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    background: transparent;
+}
+input[type="email"]{
+    color: white;
+    font-size: 15px;
+}
+input[type="text"]{
+    color: white;
+    font-size: 15px;
+}
+input[type="password"]{
+    color: white;
+    font-size: 15px;
+}
+#signin1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px ;
+}
+#signin1 button{
+    background: #fff;
+    color: rgb(27, 25, 25);
+    width: 360px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid #b9b9b9;
+    font-size: 16px;
+    
+}
+#signin1 button p{
+    margin-top: 12px;
+}
+#signin1 button:hover{
+    background-color: #292828;
+    color: #fff;
+    border-color: #292828;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#check1{
+    color: white;
+    margin: 20px 52px 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#check1 input, label{
+    cursor: pointer;
+}
+
+#check1 a:hover{
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+#button_social1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+} 
+#button_social1 #face1{
+     color: #1877f2;
+     padding: 5px 5px;
+     font-size: 20px;
+}
+#button_social1 a{
+     color: #000;
+     display: block;
+     width: 150px;
+     
+     border: 1px solid rgba(255, 255, 255, 0.4);
+     border-radius: 5px;
+     background: #fff;
+}
+#button_social1 #face1 i{
+     font-size: 25px;
+}
+#button_social1 #tw1{
+     padding: 5px 5px;
+     font-size: 20px;
+     color: #1c93e4;
+}
+#button_social1 .item3{
+     background-color: #ffffff;
+     line-height: 28px;
+     padding: 8px;
+}
+#button_social1 .item4{
+     background-color: #ffffff;
+     line-height: 28px;
+     padding: 8px;
+}
+.item3, .item4{
+     margin: 5px;
+}
+ #button_social1 a:hover{
+     background-color: #292828;
+     color: #fff;
+     border-color: #292828;
+     transition: all 0.3s;
+}
+
+
+
+.form_box_register.active {
+    display: block;
+    transform: translateX(0px);
+
+}
+#form_box_login.active{
+    display:none;
+}
+
+
+.form_box_register{
+    position: absolute;
+    transform: translateX(400px);
+    display: none;
+}
+h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+#form_input{
+    position: relative;
+    margin: 20px 0;
+}
+#form_input input{
+    border-radius: 50px;
+    padding: 20px 25px;
+    width: 360px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid transparent;
+}
+#form_input input:hover{
+    border-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s;
+    background: transparent;
+}
+input[type="email"]{
+    color: #fff;
+    font-size: 15px;
+}
+input[type="password"]{
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+#signin{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#signin button{
+    background: #fff;
+    color: rgb(27, 25, 25);
+    width: 360px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid #b9b9b9;
+    font-size: 16px;
+    
+}
+#signin button p{
+    margin-top: 12px;
+}
+#signin button:hover{
+    background-color: #292828;
+    color: #fff;
+    border-color: #292828;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+#check{
+    color: white;
+    margin: 20px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#check input, label{
+    cursor: pointer;
+}
+
+#check a:hover{
+    text-decoration: underline;
+    transition: all 0.3s;
+}
+
+.loginn {
+    text-align: center;
+    width: 100%;
+    
+    margin-bottom: 12px;
+}
+.loginn label{
+    color: white;
+}
+#button_social{
+   text-align: center;
+   display: flex;
+
+}
+
+#button_social #face{
+    color: #1877f2;
+    padding: 5px 5px;
+    font-size: 20px;
+}
+#button_social a{
+    color: #000;
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    background: #fff;
+}
+#button_social #face i{
+    font-size: 25px;
+}
+
+#button_social #tw{
+    padding: 5px 5px;
+    font-size: 20px;
+    color: #1c93e4;
+}
+#button_social .item1{
+    background-color: #ffffff;
+    line-height: 28px;
+    padding: 8px;
+}
+#button_social .item2{
+    background-color: #ffffff;
+    line-height: 28px;
+    padding: 8px;
+}
+.item1, .item2{
+    margin: 5px;
+}
+#button_social a:hover{
+    background-color: #292828;
+    color: #fff;
+    border-color: #292828;
+    transition: all 0.3s;
+}
+
+#register{
+    font-size: 15px;
+    color: #fff ;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+#register p a{
+    color: #fff;
+    font-weight: 600;
+}
+#register p a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .noi-dung {
+    margin-right: 30px;
+}
+
+footer .container .noi-dung.about {
+    width: 35%;
+    
+}
+
+footer .container .noi-dung.about h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-left: -220px;
+}
+
+footer .container .noi-dung.about h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 220px;
+    top: 50px;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p {
+    color: #999;
+}
+
+
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+
+.social-icon {
+    margin-top: -5px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover {
+    background: rgb(255, 255, 255);
+}
+
+.social-icon li a {
+    font-size: 23px;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: -130px;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 130px;
+    top: 50px;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.links {
+    position: relative;
+    width: 25%;
+}
+
+.links ul li {
+    list-style: none;
+}
+.links ul{
+    margin-top: -13px;
+}
+
+.links ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.contact h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+    margin-left: -230px;
+}
+
+.contact h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 235px;
+    top: 50px;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+    margin-top: -13px;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top: 16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+
+.btn--primary:hover {
+    background: #f00;
+}
+
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.form__field {
+    width: 90%;
+    border-radius: 50px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .noi-dung {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container,
+    .noi-dung.about,
+    .links,
+    .contact {
+        width: 100%;
+    }
+}

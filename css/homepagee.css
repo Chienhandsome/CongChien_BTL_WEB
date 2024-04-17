@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.grid-container .logo img{
+    width: 150px;
+    height: 60px;
+}
+.item1{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    background-color: #111111;
+    width: 100%;
+    z-index: 100;
+}
+
+#main_menu{
+    display: flex;
+}
+#main_menu li .mn{
+    color: #fff;
+    display: block;
+    padding: 23px 40px;
+    font-size: 20px;
+}
+#main_menu li:hover .mn{
+    color: #ee4266;
+}
+#menucap li .menucap2{
+    color: #fff;
+    display: block;
+    padding: 15px 15px;
+    font-size: 20px;
+    width: 340px;
+}
+#menucap li:hover .menucap2 {
+    color: #ee4266;
+    transition: all 0.3s;
+}
+#menucap{
+    border-top: 2px solid #ee4266;
+    text-align: left;
+    margin-left: 30px;
+    background-color: #111111;
+}
+li > ul{
+    display: none;
+    min-width: 200px;
+    margin: 0;
+    padding: 0;
+}
+li:hover ul{
+    display: block;
+    position: absolute;
+}
+
+nav #icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 32px;
+    margin-right: 20px;
+    margin-top: -60px;
+    display: none;
+    cursor: pointer;
+    
+}
+@media (max-width: 1286px){
+    .logo{
+        position: absolute;
+        left: 0;
+    }
+    #main_menu{
+        display: none;
+        z-index: 1;
+    }
+    nav #icon{
+        display: block;
+    }
+    #main_menu{
+        flex-direction: column;
+        
+    }
+    .item3{
+        z-index: -1;
+    }
+   
+    #menu{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        background: rgb(63, 62, 62);
+    }
+    #menu #main_menu .mn{
+        width: 100%;
+    }
+    #menu #main_menu .mn #menucap{
+        position: relative;
+        width: 100%;
+    }
+    
+
+}
+
+.item2 img{
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: -5px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer .container .noi-dung {
+    margin-right: 30px;
+}
+
+footer .container .noi-dung.about {
+    width: 35%;
+}
+
+footer .container .noi-dung.about h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .container .noi-dung.about h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+footer .container .noi-dung.about p {
+    color: #999;
+}
+
+
+/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+
+.social-icon {
+    margin-top: 20px;
+    display: flex;
+}
+
+.social-icon li {
+    list-style: none;
+}
+
+.social-icon li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icon li a:hover {
+    background: rgb(255, 255, 255);
+}
+
+.social-icon li a {
+    font-size: 23px;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.links h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.links {
+    position: relative;
+    width: 25%;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.links ul li a:hover {
+    color: #fff;
+}
+
+.contact h2 {
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contact h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f00;
+}
+
+.contact {
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+
+.contact .info {
+    position: relative;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1) {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.contact .info li span {
+    color: #999;
+}
+
+.contact .info li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top: 16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+
+.btn--primary:hover {
+    background: #f00;
+}
+
+.btn--primary:active {
+    background: #f00;
+    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
+}
+
+.form__field {
+    width: 90%;
+    border-radius: 50px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #a3a3a3;
+    font: inherit;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    border: 0;
+    outline: 0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 40px;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .container .noi-dung {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    footer .container,
+    .noi-dung.about,
+    .links,
+    .contact {
+        width: 100%;
+    }
+}
